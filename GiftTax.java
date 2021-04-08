@@ -46,5 +46,7 @@ public class GiftTax {
 		if (gift >= 5000) {
 			System.out.println("Tax: " + tax);
 		}
+
+		scan.close();
 	}
 }
