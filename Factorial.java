@@ -11,7 +11,7 @@ public class Factorial {
 		// 
 		// Factorial of n: f(n) ---> n! = 1 * 2 * 3 * ... * n
 		// Factorial of 4: f(4) ---> 4! = 1 * 2 * 3 * 4 = 24
-		// Factorial of 1: f(0) ---> 0! = 1
+		// Factorial of 0: f(0) ---> 0! = 1
 		
 		System.out.print("Give a number? ");
 		//int number = Integer.valueOf(scanner.nextLine()); // Redundant boxing!
