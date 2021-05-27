@@ -7,12 +7,12 @@ public class IndexOfSmallest {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		// implement here a program that reads user input
-		// until the user enters 9999
-		// after that, the program prints the smallest number
-		// and its index -- the smallest number
-		// might appear multiple times
+		// Implement a program that reads user input until the user enters 9999.
+		// After that, the program prints the smallest number and its index
+		//  -- the smallest number might appear multiple times.
 		ArrayList<Integer> numbers = new ArrayList<>();
+		
+		System.out.print("Enter integers (9999 for EXIT): ");
 		
 		while (true) {
 			int number = scanner.nextInt();
@@ -32,6 +32,11 @@ public class IndexOfSmallest {
 
 	// implement finding the smallest number in the list
 	public static int findSmallest(ArrayList<Integer> list) {
+		if (list.isEmpty()) {
+			System.out.println("No numbers! :-O");
+			return -1;
+		}
+		
 		int min = list.get(0);
 		
 		int index = 0;
@@ -48,7 +53,7 @@ public class IndexOfSmallest {
 	public static void findIndex(ArrayList<Integer> list, int value) {
 		for (int index = 0; index < list.size(); index++) {
 			if (list.get(index) == value) {
-				System.out.println("Found at index " + index);
+				System.out.println("Found at index: " + index);
 			}
 		}
 	}
